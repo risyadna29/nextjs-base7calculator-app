@@ -90,7 +90,7 @@ const Calculator = () => {
         const left = Function(`"use strict"; return (${parts[0]})`)();
         const right = Function(`"use strict"; return (${parts[1]})`)();
         return left % right;
-      } catch (error) {
+      } catch {
         throw new Error("Invalid Expression");
       }
     }
