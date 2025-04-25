@@ -40,7 +40,7 @@ const Calculator = () => {
             const decimalValue = evalToDecimal(newInput);
             setResult(decimalToBase7(decimalValue));
           }
-        } catch (error) {
+        } catch {
           // Ignore calculation errors during input
         }
       }
